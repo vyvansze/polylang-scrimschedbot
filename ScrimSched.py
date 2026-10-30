@@ -18,6 +18,9 @@ class MyClient(discord.Client):
 
         if message.content == 'Axlyte':
             await message.channel.send('You mean singaporean Aspire?')
+        
+        if message.content == '!faceit':
+            await message.channel.send('https://www.faceit.com/en/team-home/23bb31a5-759f-4d53-921b-6be676bfc745/overview')
 
 intents = discord.Intents.default()
 intents.message_content = True
